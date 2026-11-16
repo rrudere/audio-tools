@@ -6,7 +6,7 @@ A collection of lightweight, production-grade Python DSP tools designed for **AI
 
 ---
 
-## 1. audio_clean.py — Voice Pre-Processing & Dataset Conditioner
+## 1. voice_preprocessor.py — Voice Pre-Processing & Dataset Conditioner
 Engineered specifically for preparing raw speech recordings for **AI Voice Cloning (ElevenLabs / Local TTS)** and broadcast voiceovers.
 
 * **Format Agnostic:** Reads `.wav`, `.mp3`, `.ogg`, `.flac`, `.aiff`, `.opus` and standardizes output to uncompressed 24-bit PCM WAV.
@@ -16,7 +16,7 @@ Engineered specifically for preparing raw speech recordings for **AI Voice Cloni
 * **Broadcast Loudness Normalization:** Conforms integrated loudness to **-16 LUFS** (ITU-R BS.1770 / EBU R128) with a **-1.0 dBFS Peak Guard** ceiling to prevent inter-sample clipping on lossy distribution formats.
 
 **Usage:**
-`python audio_clean.py --input path/to/raw_audio --output path/to/cleaned --lufs -16.0`
+`python voice_preprocessor.py --input path/to/raw_audio --output path/to/cleaned --lufs -16.0`
 
 ---
 
